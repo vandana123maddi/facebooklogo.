@@ -1,0 +1,51 @@
+$blue-color: #4267b2;
+$white-color: #fff;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    background-color: $blue-color;
+    width: 255px;
+    height: 300px;
+    border-right: 45px solid $blue-color;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+
+    span {
+        position: absolute;
+
+        &.vertical {
+            background-color: $blue-color;
+            width: 72px;
+            height: 295px;
+            border: 45px solid $white-color;
+            bottom: -126px;
+            right: -70px;
+            border-radius: 60px;
+        }
+
+        &.horizontal {
+            background-color: $white-color;
+            width: 130px;
+            height: 45px;
+            top: 139px;
+            right: 3px;
+        }
+
+        &.diagonal {
+            background-color: $blue-color;
+            width: 50px;
+            height: 50px;
+            top: 140px;
+            right: -43px;
+            z-index: 1;
+            transform: rotateZ(-82deg);
+        }
+    }
+}
